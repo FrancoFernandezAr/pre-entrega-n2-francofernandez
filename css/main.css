@@ -1,0 +1,386 @@
+/* reset*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* estilo del menu */
+
+.colo-menu:hover {
+  border-bottom: 2px solid rgb(8, 99, 8);
+}
+/* estilos de titulos */
+
+.encabezado {
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+}
+
+.titulo {
+  padding-top: 20px;
+  color: red;
+  font-size: 4rem;
+}
+
+.unite {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  font-size: 2.5rem;
+  opacity: 0.8;
+}
+
+/* estilos de main y opciones de compra */
+
+.main-home {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  text-align: center;
+  gap: 20px;
+}
+
+.container {
+  margin-top: 40px;
+  object-fit: cover;
+  color: rgb(59, 59, 59);
+  opacity: 0.9;
+}
+
+.planmensual {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 0px;
+  grid-area: "planmensual";
+}
+
+.plananual {
+  background-color: whitesmoke;
+  border-radius: 5px;
+  padding: 0px;
+  grid-area: "plananual";
+}
+
+.p-titulo {
+  font-size: 2rem;
+  font-family: "Teko", sans-serif;
+  text-align: center;
+}
+
+.p-precio {
+  font-size: 3rem;
+  font-family: "Teko", sans-serif;
+}
+
+.p-descripcion {
+  font-family: "Teko", sans-serif;
+}
+
+.ComprarYa {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 50%;
+}
+
+.ComprarYa:hover {
+  background-color: #c82333;
+}
+
+/* estilo de footer */
+
+footer {
+  background-color: #0e0d0d;
+  color: whitesmoke;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contenedor-iconos{
+  color: rgb(146, 139, 139);
+}
+
+/* mq para tablets y computadoras de escritorio */
+
+@media screen and (min-width: 600px) {
+  .main-home {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* FIN CSS DE HOME */
+
+/*COMIENZO CSS CONTACTO */
+
+/* estilos de fondo */
+
+.main-contacto {
+  min-height: 100vh;
+  background-image: url(../IMG/Contacto/UFC\ contacto1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: "Oswald", sans-serif;
+  color: whitesmoke;
+}
+
+.titulo-contacto {
+  text-align: center;
+  margin-top: 0px;
+}
+
+/* estilos para el formulario */
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  text-transform: uppercase;
+}
+
+/* estilos para campos */
+label,
+input,
+textarea {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.mensaje {
+  height: 100px;
+}
+
+.boton {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.boton:hover {
+  background-color: #3e8e41;
+}
+
+/* mq para tablets y computadoras de escritorio */
+
+@media screen and (min-width: 600px) {
+  .contacto {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  label,
+  input,
+  textarea {
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .boton {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+/* FIN CSS DE CONTACTO */
+
+/* COMIENZO CSS DE UFC-30 */
+
+.UFC30 {
+  background-image: url(../IMG/UFC30/12062022_ufc_30_hub_mcgregor_ufc_229.jpg);
+  background-size: cover;
+  opacity: 9;
+  height: 110vh;
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(247, 240, 240);
+  padding-top: 160px;
+}
+
+.UFC30-encabezado {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 38px;
+  opacity: 0.8;
+}
+
+.container-UFC30 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.titulo-UFC30 {
+  font-size: 1.4rem;
+  font-family: "Teko", sans-serif;
+  color: rgb(59, 59, 59);
+  text-align: center;
+}
+
+.VideoUFC30 {
+  margin-left: 20px;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* mq para tablets y computadoras */
+
+@media screen and (min-width: 600px) {
+  .container-UFC30 {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* FIN CSS UFC 30 */
+
+/* COMIENZO CSS EVENTOS */
+
+.EventosPage {
+  font-family: "Russo One", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+
+.eventos-titulo {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  font-family: "Teko", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 38px;
+  opacity: 0.8;
+}
+
+.eventos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.peleadores {
+  font-size: 1.8rem;
+  font-family: "Teko", sans-serif;
+  color: rgb(59, 59, 59);
+}
+
+.informacion {
+  font-size: 1.4rem;
+  font-family: "Teko", sans-serif;
+  color: rgb(59, 59, 59);
+}
+
+.ComprarYa {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 50%;
+}
+
+/* FIN CSS DE EVENTOS */
+
+/* COMIENZO CSS DE NOTICIAS*/
+
+.titulo-noticias {
+  font-family: 'Russo One', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(59, 59, 59);
+    padding-top: 30px;
+}
+
+.subtitulo-noticias{
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(221, 30, 30);
+  padding-top: 30px;
+}
+
+.noticias{
+  display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(4, 1fr);
+width: 100%;
+height: 100%;
+grid-row-gap: 10px;
+text-align: center;
+}
+
+.img-noticias{
+  width: 50%;
+  height: 50%;
+}
+
+.noticia-uno, .noticia-dos, .noticia-tres, .noticia-cuatro{
+  font-size: 2rem;
+  font-family: "Teko", sans-serif;
+  color: rgb(59, 59, 59);
+}
+
+.boton-noticias {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 50%;
+}
+
+/* mq para tablets y computadoras */
+
+@media screen and (min-width: 600px){
+  .noticias{
+    display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 10px;
+padding-top: 50px;
+  }
+
+  .img-noticias {
+    height: 300px;
+    width: 500px;
+  }
+}
+
+
+/* FIN CSS DE NOTICIAS*/
+
